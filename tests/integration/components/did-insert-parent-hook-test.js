@@ -13,9 +13,9 @@ module('Integration | Component | didInsertParent hook runs in the correct order
     let childSpy = this.childSpy = sinon.spy();
 
     await render(hbs`
-      {{#parent-component didInsertParent=parentSpy}}
-        {{child-component didInsertParent=childSpy}}
-        {{child-component didInsertParent=childSpy}}
+      {{#parent-component didInsertParent=this.parentSpy}}
+        {{child-component didInsertParent=this.childSpy}}
+        {{child-component didInsertParent=this.childSpy}}
       {{/parent-component}}
     `);
 
@@ -30,10 +30,10 @@ module('Integration | Component | didInsertParent hook runs in the correct order
     this.show = false;
 
     await render(hbs`
-      {{#parent-component didInsertParent=parentSpy}}
-        {{#if show}}
-          {{child-component didInsertParent=childSpy}}
-          {{child-component didInsertParent=childSpy}}
+      {{#parent-component didInsertParent=this.parentSpy}}
+        {{#if this.show}}
+          {{child-component didInsertParent=this.childSpy}}
+          {{child-component didInsertParent=this.childSpy}}
         {{/if}}
       {{/parent-component}}
     `);
@@ -54,10 +54,10 @@ module('Integration | Component | didInsertParent hook runs in the correct order
     let childParentSpy = this.childParentSpy = sinon.spy();
 
     await render(hbs`
-      {{#parent-component didInsertParent=parentSpy}}
-        {{#child-parent-component didInsertParent=childParentSpy}}
-          {{child-component didInsertParent=childSpy}}
-          {{child-component didInsertParent=childSpy}}
+      {{#parent-component didInsertParent=this.parentSpy}}
+        {{#child-parent-component didInsertParent=this.childParentSpy}}
+          {{child-component didInsertParent=this.childSpy}}
+          {{child-component didInsertParent=this.childSpy}}
         {{/child-parent-component}}
       {{/parent-component}}
     `);
@@ -77,11 +77,11 @@ module('Integration | Component | didInsertParent hook runs in the correct order
     this.show = false;
 
     await render(hbs`
-      {{#parent-component didInsertParent=parentSpy}}
-        {{#if show}}
-          {{#child-parent-component id="cp" didInsertParent=childParentSpy}}
-            {{child-component didInsertParent=childSpy}}
-            {{child-component didInsertParent=childSpy}}
+      {{#parent-component didInsertParent=this.parentSpy}}
+        {{#if this.show}}
+          {{#child-parent-component id="cp" didInsertParent=this.childParentSpy}}
+            {{child-component didInsertParent=this.childSpy}}
+            {{child-component didInsertParent=this.childSpy}}
           {{/child-parent-component}}
         {{/if}}
       {{/parent-component}}

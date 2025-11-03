@@ -48,9 +48,9 @@ module('Integration | Component | misc', function(hooks) {
     let childSpy = this.childSpy = sinon.spy();
 
     await render(hbs`
-      {{#parent-component didInsertParent=parentSpy}}
-        {{child-component shouldRegister=false didInsertParent=childSpy}}
-        {{child-component shouldRegister=true didInsertParent=childSpy}}
+      {{#parent-component didInsertParent=this.parentSpy}}
+        {{child-component shouldRegister=false didInsertParent=this.childSpy}}
+        {{child-component shouldRegister=true didInsertParent=this.childSpy}}
       {{/parent-component}}
     `);
 
