@@ -7,8 +7,7 @@ on:
   workflow_dispatch:
   push:
     branches:
-      - main
-      - master
+      - v0 # this repo is only to release a legacy version
     paths:
       - '.release-plan.json'
 

@@ -1,6 +1,6 @@
 import Component from '@ember/component';
-import ChildMixin from 'ember-composability-tools/mixins/child';
-import ParentMixin from 'ember-composability-tools/mixins/parent';
+import ChildMixin from 'ember-legacy-composability-tools/mixins/child';
+import ParentMixin from 'ember-legacy-composability-tools/mixins/parent';
 
 export default Component.extend(ParentMixin, ChildMixin, {
   didInsertParent() {
