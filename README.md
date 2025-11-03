@@ -1,6 +1,7 @@
-# ember-composability-tools
+# ember-legacy-composability-tools
 
-[![Build Status](https://travis-ci.org/miguelcobain/ember-composability-tools.svg)](https://travis-ci.org/miguelcobain/ember-composability-tools) [![Ember Observer Score](http://emberobserver.com/badges/ember-composability-tools.svg)](http://emberobserver.com/addons/ember-composability-tools) [![Discord](https://img.shields.io/discord/480462759797063690.svg?logo=discord)](https://discord.gg/zT3asNS)
+> [!WARNING]
+> This package is a fork of [ember-composability-tools](https://github.com/miguelcobain/ember-composability-tools) which is only meant to be used as a bridge release to get people off old versions of that package. You probably shouldn't be installing this if you are starting a new project.
 
 This addon intends to provide helpers for building a somewhat different kind of components, i.e components which primary goal isn't to render DOM.
 
@@ -8,7 +9,7 @@ This addon intends to provide helpers for building a somewhat different kind of 
 
 To install this addon, run the usual
 ```
-ember install ember-composability-tools
+ember install ember-legacy-composability-tools
 ```
 
 ## Background and motivation
@@ -66,7 +67,7 @@ Likewise, the destroy lifecycle hooks are not called in the desired order.
 
 ```js
 import Ember from 'ember';
-import { ParentMixin } from 'ember-composability-tools';
+import { ParentMixin } from 'ember-legacy-composability-tools';
 const { Component } = Ember;
 
 export default Component.extend(ParentMixin, {
@@ -150,7 +151,7 @@ Example:
 
 ```js
 import Ember from 'ember';
-import { RenderBlockMixin } from 'ember-composability-tools';
+import { RenderBlockMixin } from 'ember-legacy-composability-tools';
 const { Component } = Ember;
 
 export default Component.extend(RenderBlockMixin, {
