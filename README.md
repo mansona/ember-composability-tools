@@ -5,9 +5,16 @@
 
 This addon intends to provide helpers for building a somewhat different kind of components, i.e components which primary goal isn't to render DOM.
 
+## Compatibility
+
+* Ember.js v3.20 or above
+* Ember CLI v3.20 or above
+* Node.js v20 or above
+
 ## Installation
 
 To install this addon, run the usual
+
 ```
 ember install ember-legacy-composability-tools
 ```
