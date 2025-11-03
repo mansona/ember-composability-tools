@@ -1,5 +1,5 @@
 {
-  "name": "ember-composability-tools",
+  "name": "ember-legacy-composability-tools",
   "version": "0.0.12",
   "description": "Helpers for building a somewhat different kind of components.",
   "keywords": [
@@ -7,12 +7,18 @@
     "composability",
     "utilities"
   ],
-  "repository": "https://github.com/miguelcobain/ember-composability-tools",
+  "repository": "https://github.com/mansona/ember-composability-tools",
   "license": "MIT",
   "author": "Miguel Andrade <jmandrade0@gmail.com>",
   "directories": {
     "doc": "doc",
     "test": "tests"
+  },
+  "release-plan": {
+    "semverIncrementAs": {
+      "major": "minor",
+      "minor": "patch"
+    }
   },
   "scripts": {
     "build": "ember build",
@@ -54,13 +60,14 @@
     "eslint-plugin-ember": "^6.7.1",
     "eslint-plugin-node": "^9.1.0",
     "loader.js": "^4.7.0",
-    "qunit-dom": "^0.9.0"
+    "qunit-dom": "^0.9.0",
+    "release-plan": "^0.17.0"
   },
+  "packageManager": "pnpm@10.20.0",
   "engines": {
     "node": "8.* || >= 10.*"
   },
   "ember-addon": {
     "configPath": "tests/dummy/config"
-  },
-  "packageManager": "pnpm@10.20.0"
+  }
 }
