@@ -13,8 +13,6 @@ This addon intends to provide helpers for building a somewhat different kind of 
 
 ## Installation
 
-To install this addon, run the usual
-
 ```
 ember install ember-legacy-composability-tools
 ```
@@ -169,8 +167,7 @@ export default Component.extend(RenderBlockMixin, {
 });
 ```
 
-Contributing
-------------------------------------------------------------------------------
+## Contributing
 
 ### Installation
 
@@ -197,7 +194,6 @@ Contributing
 
 For more information on using ember-cli, visit [https://ember-cli.com/](https://ember-cli.com/).
 
-License
-------------------------------------------------------------------------------
+## License
 
 This project is licensed under the [MIT License](LICENSE.md).

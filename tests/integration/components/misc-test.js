@@ -1,4 +1,4 @@
-/* eslint-disable ember/no-classic-classes, ember/no-classic-components, ember/no-get, ember/require-computed-property-dependencies, prettier/prettier */
+/* eslint-disable ember/no-classic-classes, ember/no-classic-components, ember/no-get, ember/require-computed-property-dependencies, prettier/prettier, qunit/no-assert-equal */
 import Component from '@ember/component';
 import EObject, { computed } from '@ember/object';
 import { module, test } from 'qunit';
@@ -48,9 +48,9 @@ module('Integration | Component | misc', function(hooks) {
     let childSpy = this.childSpy = sinon.spy();
 
     await render(hbs`
-      {{#parent-component didInsertParent=parentSpy}}
-        {{child-component shouldRegister=false didInsertParent=childSpy}}
-        {{child-component shouldRegister=true didInsertParent=childSpy}}
+      {{#parent-component didInsertParent=this.parentSpy}}
+        {{child-component shouldRegister=false didInsertParent=this.childSpy}}
+        {{child-component shouldRegister=true didInsertParent=this.childSpy}}
       {{/parent-component}}
     `);
 
