@@ -1,5 +1,5 @@
 /* eslint-disable prettier/prettier */
-import { module, test } from 'qunit';
+import { module, test, skip } from 'qunit';
 import { setupRenderingTest } from 'ember-qunit';
 import { render } from '@ember/test-helpers';
 import hbs from 'htmlbars-inline-precompile';
@@ -32,7 +32,7 @@ module('Integration | Component | willDestroyParent hook runs in the correct ord
   /**
    * This test has a maximum callstack error - we should try to re-enable it at a later glimmer version
    */
-  QUnit.skip('top-level parent and two children after if', async function(assert) {
+  skip('top-level parent and two children after if', async function(assert) {
     let parentSpy = this.parentSpy = sinon.spy();
     let childSpy = this.childSpy = sinon.spy();
     let childParentSpy = this.childParentSpy = sinon.spy();
