@@ -1,3 +1,4 @@
+/* eslint-disable ember/no-get, ember/no-new-mixins, ember/no-try-invoke, prettier/prettier */
 import Mixin from '@ember/object/mixin';
 import { A } from '@ember/array';
 import { tryInvoke } from '@ember/utils';

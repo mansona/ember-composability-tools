@@ -1,3 +1,4 @@
+/* eslint-disable ember/no-get, ember/no-new-mixins, ember/no-try-invoke, ember/require-computed-property-dependencies, prettier/prettier */
 import Mixin from '@ember/object/mixin';
 import { computed } from '@ember/object';
 import { tryInvoke } from '@ember/utils';

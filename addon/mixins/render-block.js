@@ -1,3 +1,4 @@
+/* eslint-disable ember/no-get, ember/no-new-mixins, ember/require-computed-macros, ember/require-computed-property-dependencies, ember/require-return-from-computed, prettier/prettier */
 import Mixin from '@ember/object/mixin';
 import { computed } from '@ember/object';
 import { getOwner } from '@ember/application';
