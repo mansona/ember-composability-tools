@@ -1,3 +1,4 @@
+/* eslint-disable ember/no-classic-classes, ember/no-classic-components, ember/no-get, ember/require-computed-property-dependencies, prettier/prettier */
 import Component from '@ember/component';
 import EObject, { computed } from '@ember/object';
 import { module, test } from 'qunit';

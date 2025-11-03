@@ -1,3 +1,4 @@
+/* eslint-disable ember/no-classic-classes, ember/no-classic-components, ember/no-mixins, ember/require-tagless-components, prettier/prettier */
 import Component from '@ember/component';
 import ParentMixin from 'ember-legacy-composability-tools/mixins/parent';
 

@@ -1,3 +1,4 @@
+/* eslint-disable ember/no-classic-classes, ember/no-classic-components, prettier/prettier */
 import Component from '@ember/component';
 import { run } from '@ember/runloop';
 import { module, test } from 'qunit';
