@@ -1,0 +1,22 @@
+{
+  "solution": {
+    "ember-legacy-composability-tools": {
+      "impact": "major",
+      "oldVersion": "0.0.12",
+      "newVersion": "0.1.0",
+      "tagName": "latest",
+      "constraints": [
+        {
+          "impact": "major",
+          "reason": "Appears in changelog section :boom: Breaking Change"
+        },
+        {
+          "impact": "patch",
+          "reason": "Appears in changelog section :house: Internal"
+        }
+      ],
+      "pkgJSONPath": "./package.json"
+    }
+  },
+  "description": "## Release (2025-11-06)\n\n* ember-legacy-composability-tools 0.1.0 (major)\n\n#### :boom: Breaking Change\n* `ember-legacy-composability-tools`\n  * [#4](https://github.com/mansona/ember-legacy-composability-tools/pull/4) update to v3.28.6 with ember-cli-update and drop support for Ember < 3.20 ([@mansona](https://github.com/mansona))\n  * [#1](https://github.com/mansona/ember-legacy-composability-tools/pull/1) swap to pnpm and drop support for Node < v20 ([@mansona](https://github.com/mansona))\n\n#### :house: Internal\n* `ember-legacy-composability-tools`\n  * [#7](https://github.com/mansona/ember-legacy-composability-tools/pull/7) update to v5.12 with ember-cli-update ([@mansona](https://github.com/mansona))\n  * [#5](https://github.com/mansona/ember-legacy-composability-tools/pull/5) update to v4.12 with ember-cli-update ([@mansona](https://github.com/mansona))\n  * [#2](https://github.com/mansona/ember-legacy-composability-tools/pull/2) start using release-plan ([@mansona](https://github.com/mansona))\n\n#### Committers: 1\n- Chris Manson ([@mansona](https://github.com/mansona))\n"
+}
