@@ -5,7 +5,7 @@ const { embroiderSafe, embroiderOptimized } = require('@embroider/test-setup');
 
 module.exports = async function () {
   return {
-    usePnpm: true,
+    packageManager: 'pnpm',
     scenarios: [
       {
         name: 'ember-lts-3.20',
@@ -13,6 +13,9 @@ module.exports = async function () {
           devDependencies: {
             'ember-source': '~3.20.0',
             'ember-qunit': '^5.0.0',
+            '@ember/test-helpers': '^2.0.0',
+            'ember-resolver': '^11.0.0',
+            'ember-cli': '^4.12.0',
           },
         },
       },
@@ -22,6 +25,9 @@ module.exports = async function () {
           devDependencies: {
             'ember-source': '~3.24.0',
             'ember-qunit': '^5.0.0',
+            '@ember/test-helpers': '^2.0.0',
+            'ember-resolver': '^11.0.0',
+            'ember-cli': '^4.12.0',
           },
         },
       },
@@ -30,6 +36,8 @@ module.exports = async function () {
         npm: {
           devDependencies: {
             'ember-source': '~3.28.0',
+            'ember-resolver': '^11.0.0',
+            'ember-cli': '^4.12.0',
           },
         },
       },
@@ -38,6 +46,7 @@ module.exports = async function () {
         npm: {
           devDependencies: {
             'ember-source': '~4.4.0',
+            'ember-resolver': '^11.0.0',
           },
         },
       },
@@ -46,6 +55,7 @@ module.exports = async function () {
         npm: {
           devDependencies: {
             'ember-source': '~4.8.0',
+            'ember-resolver': '^11.0.0',
           },
         },
       },
